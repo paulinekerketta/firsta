@@ -37,7 +37,7 @@
 
 <p>
   <strong>Overunder:</strong>
-  <%= @dailycash.overunder %>
+  <%= (dailycash.driverpaid+dailycash.lodgement+dailycash.discount+dailycash.purchase+dailycash.cashpaid)-dailycash.sale%>
 </p>
 
 <%= link_to 'Edit', edit_dailycash_path(@dailycash) %> |

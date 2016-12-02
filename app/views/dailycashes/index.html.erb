@@ -27,7 +27,7 @@
         <td><%= dailycash.discount %></td>
         <td><%= dailycash.driverpaid %></td>
         <td><%= dailycash.lodgement %></td>
-        <td><%= dailycash.overunder %></td>
+        <td><%= (dailycash.cashpaid + dailycash.purchase + dailycash.discount +  dailycash.driverpaid + dailycash.lodgement) -dailycash.sale %></td>
         <td><%= link_to 'Show', dailycash %></td>
         <td><%= link_to 'Edit', edit_dailycash_path(dailycash) %></td>
         <td><%= link_to 'Destroy', dailycash, method: :delete, data: { confirm: 'Are you sure?' } %></td>
